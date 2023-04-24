@@ -3,7 +3,6 @@
 	"extends": [
 		"config:base"
 	],
-	"prhourlylimit": 10,
 	"packageRules": [{
 		"matchDepTypes": ["devDependencies"],
 		"groupName": "devDependencies",
@@ -12,5 +11,7 @@
 	}, {
 		"matchUpdateTypes": ["patch", "minor"],
 		"groupName": "dependencies (non-major)"
+	}, {
+		"prhourlylimit": 10
 	}]
 }
