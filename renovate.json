@@ -3,6 +3,7 @@
 	"extends": [
 		"config:base"
 	],
+	"prhourlylimit": 10,
 	"packageRules": [{
 		"matchDepTypes": ["devDependencies"],
 		"groupName": "devDependencies",
