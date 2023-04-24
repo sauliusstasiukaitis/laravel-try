@@ -4,20 +4,19 @@
 		"config:base"
 	],
 	"packageRules": [{
-		"matchDepTypes": ["devDependencies"],
-		"groupName": "devDependencies",
-		"automerge": true,
-		"prPriority": -1
-	}, {
-		"matchUpdateTypes": ["patch", "minor"],
-		"groupName": "dependencies (non-major)"
-	}, {
-		"matchUpdateTypes": [
-			"major"
-		],
-		"labels": [
-			"renovate-major"
-		],
-		"prHourlyLimit": 5
-	}]
+			"matchUpdateTypes": ["major"],
+			"labels": ["renovate-major"],
+			"prHourlyLimit": 5
+		},
+		{
+			"matchUpdateTypes": ["patch", "minor"],
+			"groupName": "dependencies (non-major)"
+		},
+		{
+			"matchDepTypes": ["devDependencies"],
+			"groupName": "devDependencies",
+			"automerge": true,
+			"prPriority": -1
+		}
+	]
 }
