@@ -1,5 +1,5 @@
 #FROM php:7-apache
-FROM php:7.0-apache
+FROM php:7.4-apache
 
 RUN apt-get update -y \
     && apt-get install -y libpng-dev curl libcurl4-openssl-dev \
