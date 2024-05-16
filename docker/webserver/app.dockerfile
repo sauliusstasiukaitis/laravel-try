@@ -1,4 +1,4 @@
-FROM php:7.4.33-fpm
+FROM php:8.3.7-fpm
 
 RUN apt-get update && apt-get install -y libmcrypt-dev \
     mysql-client libmagickwand-dev --no-install-recommends \
